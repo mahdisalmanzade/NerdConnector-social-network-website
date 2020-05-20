@@ -1,0 +1,86 @@
+@import 'config';
+@import 'utilities';
+// Core styles
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+ul {
+  list-style: none;
+}
+
+// Full width of its container without breaking out
+img {
+  width: 100%;
+}
+ 
+// Navbar styles
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 2rem;
+  position: fixed; // always at the top
+  z-index: 1; // always top of the rest of the content
+  width: 100%;
+  top: 0;
+  border-bottom: solid 1px $primary-color;
+  opacity: 0.9;
+
+  ul {
+    display: flex;
+  }
+
+  a  {
+    color: #fff;
+    padding: 0.45rem;
+    margin: 0 0.25;
+
+    &:hover {
+      color: $primary-color;
+      font-weight: bold;
+    }
+  }
+
+  
+  i {
+    color: $primary-color;
+  }
+}
+
+// Landing
+
+.landing {
+  position: relative;
+  background: url('../img/laptop.jpg') no-repeat;
+  background-size: cover;
+  background-position: center/center;
+  height: 100vh;
+
+  &-inner {
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+}
